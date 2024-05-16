@@ -1,0 +1,102 @@
+html, body {
+    height: 100%; /* Isso faz com que o body ocupe pelo menos a altura total da janela do navegador */
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Isso posiciona os elementos flex em uma coluna (um em cima do outro) */
+    padding-top: 30px; /* Ajuste conforme a altura da sua navbar */
+    
+}
+main {
+    flex: 1; /* Isso permite que o conteúdo cresça para ocupar o espaço disponível */
+}
+/* Estrutura geral */
+.container-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre itens */
+    padding: 0.5rem;
+}
+/* Estilização da imagem */
+.img-impacto {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilização do texto */
+.text-impacto {
+    flex-basis: 50%; /* Ajuste este valor conforme necessário */
+    text-align: left; /* Alinhar texto à esquerda */
+    font-size: 1rem; /* Ajuste este valor conforme necessário */
+    line-height: 1.5; /* Espaçamento entre linhas */
+    color: #333; /* Cor do texto */
+    margin: 20px auto; /* Ajuste o valor conforme necessário */
+    max-width: 900px; /* ou a largura desejada para o texto */
+    padding: 0 15px; /* Para não tocar nas bordas da janela do navegador */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container-flex {
+        flex-direction: column;
+    }
+
+    .img-impacto,
+    .text-impacto {
+        flex-basis: 100%;
+        max-width: 100%;
+        margin: 1rem 0;
+    }
+
+    .text-impacto {
+        text-align: center; /* Centralizar texto em telas menores */
+    }
+}
+
+.titulo-impacto {
+    font-size: 2.5rem;
+    margin-bottom: 0.10rem; /* ou 0rem se você não quiser espaço algum */
+    text-align: center;
+}
+.titulo-h2 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    text-align: center; /* Centraliza o título da seção */
+}
+  
+.lista-ajuda {
+    list-style: none;
+    padding: 0;
+}
+  
+.lista-ajuda li {
+    position: relative;
+    padding-left: 25px; /* Espaço para o marcador */
+    margin-bottom: 10px; /* Espaço entre os itens */
+}
+  
+.lista-ajuda li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #000; /* Cor do marcador */
+    font-weight: bold;
+}
+  
+.texto-final {
+    text-align: center;
+    margin-top: 5px;
+}
+/* Ajustes para o rodapé */
+footer {
+    padding: 1rem 0; /* Ajuste conforme necessário */
+    background: #333; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto do rodapé */
+    text-align: center; /* Alinhar texto ao centro */
+}

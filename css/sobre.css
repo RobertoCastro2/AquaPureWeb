@@ -1,0 +1,155 @@
+/* Espaçamento no topo para evitar sobreposição com a navbar */
+html, body {
+    height: 100%; /* Isso faz com que o body ocupe pelo menos a altura total da janela do navegador */
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Isso posiciona os elementos flex em uma coluna (um em cima do outro) */
+    padding-top: 60px; /* Ajuste conforme a altura da sua navbar */
+
+}
+
+body > #conteudo {
+    flex: 1; /* Isso faz com que o conteúdo cresça e ocupe qualquer altura disponível */
+    /* Adicione um padding-bottom aqui se quiser algum espaço acima do rodapé */
+}
+
+footer {
+    background: #333; /* Ou qualquer cor de fundo que você escolher */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0; /* Adiciona um pouco de espaço vertical dentro do rodapé */
+    /* Isso mantém o rodapé no fim da página */
+}
+/* Estilos para o cabeçalho da página Sobre */
+.sobre-header {
+    text-align: center; /* Centraliza o texto */
+    padding: 60px 0; /* Espaçamento acima e abaixo do texto */
+}
+
+/* Título da página Sobre */
+.sobre-header h1 {
+    font-size: 2.5rem; /* Tamanho do título */
+    color: #333; /* Cor do texto do título */
+    margin-bottom: 0.5em; /* Espaçamento abaixo do título */
+}
+
+/* Parágrafo introdutório da página Sobre */
+.sobre-header p {
+    font-size: 1.2rem; /* Tamanho do texto */
+    color: #666; /* Cor do texto */
+    margin-bottom: 1em; /* Espaçamento abaixo do parágrafo */
+}
+
+/* Estilos para a seção da equipe */
+.nossa-equipe {
+    padding: 40px 0; /* Espaçamento acima e abaixo da seção da equipe */
+}
+.sobre-container {
+    max-width: 800px; /* ou a largura que você preferir */
+    margin: auto; /* Isso vai centralizar seu container */
+    padding: 20px;
+    text-align: center; /* Isso vai centralizar o texto */
+}
+
+.sobre-title {
+    font-size: 2.5em; /* Ajuste o tamanho conforme necessário */
+    margin-bottom: 0.5em; /* Espaço entre o título e o parágrafo */
+    
+}
+
+.sobre-text {
+    font-size: 1.2em;
+    line-height: 1.6em; /* Espaçamento entre as linhas para facilitar a leitura */
+    margin-bottom: 2em; /* Espaço antes da próxima seção */
+    
+}
+
+@media (max-width: 768px) {
+    .sobre-container {
+        padding: 20px;
+    }
+    .sobre-title {
+        font-size: 1.5rem; /* Tamanho menor para dispositivos móveis */
+    }
+    .sobre-text {
+        text-align: left; /* Em dispositivos móveis, o texto justificado pode não funcionar tão bem */
+    }
+}
+.nossa-equipe {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.equipe-membros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+    max-width: 1200px; /* Ajuste isso de acordo com a largura máxima desejada para o contêiner */
+    margin: auto; /* Isso centralizará o contêiner na página */
+}
+
+@media (max-width: 768px) {
+    .equipe-membros {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin-bottom: 20px; /* Espaço entre cartões */
+    transition: transform 0.2s, box-shadow 0.2s; /* Suavização da transição */
+    width: calc(25% - 30px);
+    
+}
+
+.card:hover,
+.card:focus {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 15px rgba(0,0,0,0.2);
+}
+
+.card-image {
+    width: 200px;
+    height: 200px; /* Fixe a altura ou deixe auto para altura dinâmica */
+    border-radius: 50%;
+    object-fit: cover; /* Mantém a proporção da imagem sem esticar */
+}
+
+.card-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.card-link {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-link:hover,
+.card-link:focus {
+    background: #0056b3;
+    color: #ffffff;
+}
