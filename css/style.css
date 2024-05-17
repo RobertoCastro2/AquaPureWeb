@@ -94,9 +94,14 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.7); 
-    z-index: 1000; 
+    background: rgba(0, 0, 0, 0.7); /* Transparência para permitir que a imagem apareça por trás */
+    z-index: 1000; /* Garantir que a navegação fique acima dos outros elementos */
     padding: 10px 0;
+}
+nav .container {
+    display: flex;
+    justify-content: space-between; /* Espaço entre o logotipo e os links de navegação */
+    align-items: center;
 }
 
 section {
@@ -122,9 +127,10 @@ nav h1 {
     margin: 0;
     padding: 0;
     color: #ffffff;
-    font-size: 1.5em; 
+    font-size: 1.5em; /* Tamanho do logotipo */
 }
 
+/* Estilo para os links da navegação */
 nav ul {
     list-style: none;
     display: flex;
@@ -133,20 +139,26 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 20px; 
+    margin-left: 20px; /* Espaçamento entre os itens do menu */
 }
 
 nav a {
     color: #ffffff;
     text-decoration: none;
-    padding: 5px 10px; 
+    padding: 5px 10px; /* Espaço ao redor dos links para torná-los mais clicáveis */
     font-weight: bold;
-    transition: color 0.3s ease, background-color 0.3s ease; 
+    transition: color 0.3s ease, background-color 0.3s ease; /* Efeito suave ao mudar cores */
+}
+nav a:hover, nav a:focus {
+    color: #dddddd; /* Mudar a cor ao passar o mouse */
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo sutil ao passar o mouse */
 }
 
-nav a:hover, nav a:focus {
-    color: #dddddd; 
-    background-color: rgba(255, 255, 255, 0.2); 
+/* Estilo para o link ativo */
+nav a.active {
+    color: #ffffff; /* Escolha uma cor que destaque o link ativo */
+    background-color: #007bff; /* Um fundo diferente para o link ativo */
+    border-radius: 5px; /* Borda arredondada para o link ativo (opcional) */
 }
 
 footer {
@@ -154,12 +166,6 @@ footer {
     color: #fff; 
     padding: 20px 0; 
     text-align: center; 
-}
-
-nav a.active {
-    color: #ffffff; 
-    background-color: #007bff; 
-    border-radius: 5px; 
 }
 
 /* Media Queries para Responsividade */
@@ -183,12 +189,12 @@ nav a.active {
     }
 
     nav ul {
-        flex-direction: column;
-        padding: 0;
+        flex-direction: row; /* Mantém os links na horizontal em dispositivos móveis */
+        justify-content: center; /* Centraliza os links no menu */
     }
 
     nav ul li {
-        margin: 10px 0;
+        margin-left: 10px; /* Reduz o espaço entre os itens do menu em dispositivos móveis */
     }
 
     .hero-banner h2 {
