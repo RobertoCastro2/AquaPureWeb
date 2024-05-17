@@ -1,3 +1,4 @@
+/* Reset de estilo */
 * {
     margin: 0;
     padding: 0;
@@ -10,20 +11,20 @@ body {
 }
 
 h2 {
-    font-size: 2.2rem;
-    margin: 0.5em 0;
-    padding: 0.2em 0;
-    text-align: center;
+    font-size: 2.2rem; 
+    margin: 0.5em 0; 
+    padding: 0.2em 0; 
+    text-align: center; 
 }
 
 p {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 1em;
-    max-width: 800px;
-    margin-left: auto;
+    font-size: 1rem; 
+    line-height: 1.6; 
+    margin-bottom: 1em; 
+    max-width: 800px; 
+    margin-left: auto; 
     margin-right: auto;
-    padding: 0 15px;
+    padding: 0 15px; 
 }
 
 .hero-banner {
@@ -48,7 +49,6 @@ p {
     text-shadow: 1px 1px 3px #000;
 }
 
-/* Usado para a navegação e o rodapé */
 .general-container {
     max-width: 1140px;
     width: 80%;
@@ -59,73 +59,70 @@ p {
     align-items: center;
 }
 
-/* Usado especificamente dentro de .hero-banner para o conteúdo do título */
 .banner-container {
-    padding: 0 15px;
-    max-width: 1140px;
-    margin: 0 auto;
-    text-align: center;
+    padding: 0 15px; 
+    max-width: 1140px; 
+    margin: 0 auto; 
+    text-align: center; 
 }
 
 #mr-sweep-machine {
-    padding: 2em 0;
+    padding: 2em 0; 
 }
 
 .machine-info {
     display: flex;
-    align-items: center;
-    gap: 20px;
+    align-items: center; 
+    gap: 20px; 
     padding: 1em;
 }
 
 .machine-image {
-    width: 50%;
-    max-width: 400px;
-    height: auto;
-    border-radius: 10px;
+    width: 50%; 
+    max-width: 400px; 
+    height: auto; 
+    border-radius: 10px; 
 }
 
 .machine-info p {
     color: #333;
     font-size: 1rem;
-    flex: 1;
+    flex: 1; 
 }
 
-/* Estilização da barra de navegação */
 nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 1000;
+    background: rgba(0, 0, 0, 0.7); 
+    z-index: 1000; 
     padding: 10px 0;
 }
 
 section {
-    padding: 2em 0;
+    padding: 2em 0; 
 }
 
 .container {
-    max-width: 1140px;
-    margin: auto;
+    max-width: 1140px; 
+    margin: auto; 
     padding: 0 15px;
-    width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
 }
 
 .hero-banner .container {
-    display: block;
+    display: block; 
     text-align: center;
-    justify-content: center;
+    justify-content: center; 
 }
 
 nav h1 {
     margin: 0;
     padding: 0;
     color: #ffffff;
-    font-size: 1.5em;
+    font-size: 1.5em; 
 }
 
 nav ul {
@@ -136,38 +133,37 @@ nav ul {
 }
 
 nav ul li {
-    margin-left: 20px;
+    margin-left: 20px; 
 }
 
 nav a {
     color: #ffffff;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 5px 10px; 
     font-weight: bold;
-    transition: color 0.3s ease, background-color 0.3s ease;
+    transition: color 0.3s ease, background-color 0.3s ease; 
 }
 
 nav a:hover, nav a:focus {
-    color: #dddddd;
-    background-color: rgba(255, 255, 255, 0.2);
+    color: #dddddd; 
+    background-color: rgba(255, 255, 255, 0.2); 
 }
 
 footer {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+    background: #333; 
+    color: #fff; 
+    padding: 20px 0; 
+    text-align: center; 
 }
 
-/* sobre.html */
 nav a.active {
-    color: #ffffff;
-    background-color: #007bff;
-    border-radius: 5px;
+    color: #ffffff; 
+    background-color: #007bff; 
+    border-radius: 5px; 
 }
 
 /* Media Queries para Responsividade */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     .container {
         flex-direction: column;
         text-align: center;
@@ -189,13 +185,6 @@ nav a.active {
     nav ul li {
         margin: 10px 0;
     }
-}
-
-@media (max-width: 768px) {
-    .hero-banner {
-        min-height: 500px;
-        padding: 30px 0;
-    }
 
     .hero-banner h2 {
         font-size: 2rem;
@@ -203,67 +192,5 @@ nav a.active {
 
     .hero-banner p {
         font-size: 1.2rem;
-    }
-
-    .machine-image {
-        width: 100%;
-    }
-
-    .general-container, .banner-container {
-        width: 90%;
-        text-align: center;
-    }
-
-    .container {
-        flex-direction: column;
-    }
-
-    nav ul {
-        flex-direction: column;
-        padding-top: 10px;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
-}
-
-@media (max-width: 480px) {
-    h2 {
-        font-size: 1.8rem;
-    }
-
-    p {
-        font-size: 0.9rem;
-    }
-
-    .hero-banner {
-        min-height: 400px;
-    }
-
-    .machine-info {
-        flex-direction: column;
-    }
-
-    .machine-image {
-        width: 100%;
-    }
-
-    .general-container, .banner-container {
-        width: 100%;
-        padding: 0 10px;
-    }
-
-    .container {
-        flex-direction: column;
-    }
-
-    nav ul {
-        flex-direction: column;
-        padding-top: 10px;
-    }
-
-    nav ul li {
-        margin: 10px 0;
     }
 }
