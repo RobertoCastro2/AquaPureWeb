@@ -5,7 +5,6 @@ html, body {
     display: flex;
     flex-direction: column; /* Isso posiciona os elementos flex em uma coluna (um em cima do outro) */
     padding-top: 60px; /* Ajuste conforme a altura da sua navbar */
-
 }
 
 body > #conteudo {
@@ -20,6 +19,7 @@ footer {
     padding: 10px 0; /* Adiciona um pouco de espaço vertical dentro do rodapé */
     /* Isso mantém o rodapé no fim da página */
 }
+
 /* Estilos para o cabeçalho da página Sobre */
 .sobre-header {
     text-align: center; /* Centraliza o texto */
@@ -44,6 +44,7 @@ footer {
 .nossa-equipe {
     padding: 40px 0; /* Espaçamento acima e abaixo da seção da equipe */
 }
+
 .sobre-container {
     max-width: 800px; /* ou a largura que você preferir */
     margin: auto; /* Isso vai centralizar seu container */
@@ -54,16 +55,15 @@ footer {
 .sobre-title {
     font-size: 2.5em; /* Ajuste o tamanho conforme necessário */
     margin-bottom: 0.5em; /* Espaço entre o título e o parágrafo */
-    
 }
 
 .sobre-text {
     font-size: 1.2em;
     line-height: 1.6em; /* Espaçamento entre as linhas para facilitar a leitura */
     margin-bottom: 2em; /* Espaço antes da próxima seção */
-    
 }
 
+/* Responsividade para a seção sobre */
 @media (max-width: 768px) {
     .sobre-container {
         padding: 20px;
@@ -75,6 +75,7 @@ footer {
         text-align: left; /* Em dispositivos móveis, o texto justificado pode não funcionar tão bem */
     }
 }
+
 .nossa-equipe {
     text-align: center;
     padding: 40px 0;
@@ -90,13 +91,14 @@ footer {
     margin: auto; /* Isso centralizará o contêiner na página */
 }
 
+/* Responsividade para a seção da equipe */
 @media (max-width: 768px) {
     .equipe-membros {
         flex-direction: column;
         align-items: center;
     }
-
 }
+
 .card {
     background: #fff;
     border-radius: 8px;
@@ -105,7 +107,25 @@ footer {
     margin-bottom: 20px; /* Espaço entre cartões */
     transition: transform 0.2s, box-shadow 0.2s; /* Suavização da transição */
     width: calc(25% - 30px);
-    
+}
+
+/* Responsividade para os cartões */
+@media (max-width: 1024px) {
+    .card {
+        width: calc(33.33% - 20px); /* 3 cartões por linha em telas médias */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* 2 cartões por linha em telas pequenas */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* 1 cartão por linha em telas muito pequenas */
+    }
 }
 
 .card:hover,
