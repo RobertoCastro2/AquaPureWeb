@@ -249,6 +249,17 @@ footer {
         margin: 10px 0; /* Reduz o espaço entre os itens do menu em dispositivos móveis */
     }
 
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
+    
+    /* Estilo da logo */
+    .logo {
+        height: 40px; /* Ajuste conforme necessário */
+        margin-right: 10px; /* Espaço entre a logo e o título */
+    }
+    
     .hero-banner h2 {
         font-size: 2rem;
     }
