@@ -103,7 +103,16 @@ nav .container {
     justify-content: space-between; /* Espaço entre o logotipo e os links de navegação */
     align-items: center;
 }
+.logo-container {
+    display: flex;
+    align-items: center;
+}
 
+/* Estilo da logo */
+.logo {
+    height: 40px; /* Ajuste conforme necessário */
+    margin-right: 10px; /* Espaço entre a logo e o título */
+}
 section {
     padding: 2em 0; 
 }
@@ -170,6 +179,46 @@ footer {
 
 /* Media Queries para Responsividade */
 @media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .machine-info {
+        flex-direction: column;
+    }
+
+    .machine-image {
+        width: 80%;
+    }
+
+    nav {
+        padding: 0px 0;
+    }   
+    nav .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: row; /* Mantém os links na horizontal em dispositivos móveis */
+        justify-content: center; /* Centraliza os links no menu */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Reduz o espaço entre os itens do menu em dispositivos móveis */
+    }
+
+    .hero-banner h2 {
+        font-size: 2rem;
+    }
+
+    .hero-banner p {
+        font-size: 1.2rem;
+    }
+    
+}
+@media (max-width: 320px) {
     .container {
         flex-direction: column;
         text-align: center;
