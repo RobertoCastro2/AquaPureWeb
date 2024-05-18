@@ -194,7 +194,7 @@ footer {
     }
 
     nav ul li {
-        margin-left: 10px; /* Reduz o espaço entre os itens do menu em dispositivos móveis */
+        margin: 10px 0; /* Reduz o espaço entre os itens do menu em dispositivos móveis */
     }
 
     .hero-banner h2 {
@@ -204,4 +204,5 @@ footer {
     .hero-banner p {
         font-size: 1.2rem;
     }
+    
 }
