@@ -40,11 +40,6 @@ footer {
     margin-bottom: 1em; /* Espaçamento abaixo do parágrafo */
 }
 
-/* Estilos para a seção da equipe */
-.nossa-equipe {
-    padding: 40px 0; /* Espaçamento acima e abaixo da seção da equipe */
-}
-
 .sobre-container {
     max-width: 800px; /* ou a largura que você preferir */
     margin: auto; /* Isso vai centralizar seu container */
@@ -78,7 +73,7 @@ footer {
 
 .nossa-equipe {
     text-align: center;
-    padding: 40px 0;
+    padding: 10px 0;
 }
 
 .equipe-membros {
@@ -137,10 +132,17 @@ footer {
 .card-image {
     width: 200px;
     height: 200px; /* Fixe a altura ou deixe auto para altura dinâmica */
-    border-radius: 50%;
+    border-radius: 10%;
     object-fit: cover; /* Mantém a proporção da imagem sem esticar */
+    object-position: 75% 25%;
 }
+#pedro {
+    object-position: 50% 50%;
+}
+#roberto {  
+    object-position: 50% 50%;
 
+}
 .card-content {
     padding: 15px;
     text-align: center;
